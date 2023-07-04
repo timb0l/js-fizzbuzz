@@ -1,0 +1,20 @@
+.bg-dark {
+    background-color: rgb(26, 26, 32);
+}
+
+.square {
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 179, 39);
+}
+
+.vertical-align-square {
+    line-height: 150px;
+    vertical-align: middle;
+}
+.container-squares-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
