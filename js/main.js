@@ -18,19 +18,19 @@ for (let i=1; i<=100; i++) {
         let bgColor = ""
         let result = i
     if ((i % 3 == 0)&& (i % 5 == 0)) {
-        bgColor = "bg-warning";
-        content ="FizzBuzz";
+        bgColor = "bg-secondary";
+        result ="FizzBuzz";
     } else if (i % 3 == 0) {
         bgColor = "bg-danger";
-        content ="Fizz";
+        result ="Fizz";
     } else if (i % 5 == 0) {
-        bgColor = "bg-secondary";
-        content ="Buzz";
+        bgColor = "bg-warning";
+        result ="Buzz";
     }
-    document.getElementById('squareContainer').innerHTML += 
+    document.getElementById('squaresContainer').innerHTML += 
     `
-        <div class="square ${bgColor}">
-            <p class="text-center text-white fs-3 fw-3 vertical-align-square">${result}</p>
-         </div>
+    <div class="square ${bgColor}">
+        <p class="text-center text-white fs-3 fw-3 vertical-align-square">${result}</p>
+    </div>
     `;
 }
