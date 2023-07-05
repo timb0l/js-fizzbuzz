@@ -17,15 +17,19 @@
 for (let i=1; i<=100; i++) {
         let bgColor = ""
         let result = i
+        console.log(i);
     if ((i % 3 == 0)&& (i % 5 == 0)) {
         bgColor = "bg-secondary";
         result ="FizzBuzz";
+        console.log("FizzBuzz");
     } else if (i % 3 == 0) {
         bgColor = "bg-danger";
         result ="Fizz";
+        console.log("Fizz")
     } else if (i % 5 == 0) {
         bgColor = "bg-warning";
         result ="Buzz";
+        console.log("Buzz");
     }
     document.getElementById('squaresContainer').innerHTML += 
     `
